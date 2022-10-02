@@ -12,11 +12,20 @@ namespace Classes_Basics
         //private string firstName;
         public string firstName = "";
         public string lastName = "";
+        public int age;
+
+        // constructor
+        public Human(string firstName, string lastName, int age)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+        }
 
         //member 
         public void IntroduceMyself()
         {
-            Console.WriteLine("Hi, I'm {0} {1}", firstName, lastName);
+            Console.WriteLine("Hi, I'm {0} {1}, my age is {2}", firstName, lastName, age);
         }
     }
 }
