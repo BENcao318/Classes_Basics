@@ -6,3 +6,9 @@ denis.IntroduceMyself();
 
 Human michael = new Human("Mike", "Cao", 1);
 michael.IntroduceMyself();
+
+Human basicHuman = new Human();
+basicHuman.IntroduceMyself();
+
+Human Natalie = new Human("Natalie");
+Natalie.IntroduceMyself();
