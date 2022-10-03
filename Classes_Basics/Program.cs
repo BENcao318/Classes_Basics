@@ -12,3 +12,12 @@ basicHuman.IntroduceMyself();
 
 Human Natalie = new Human("Natalie");
 Natalie.IntroduceMyself();
+
+Box box = new Box();
+//box.length = 3;
+box.SetLength(3);
+Console.WriteLine("The length of the box is {0}", box.GetLength());
+box.height = 4;
+box.width = 5;
+
+box.DisplayInfo();
