@@ -9,7 +9,7 @@ namespace Classes_Basics
     internal class Box
     {
         // member variables
-        private int length;
+        private int length = 3;
         public int height;
         public int width;
         public int volume;
@@ -17,6 +17,10 @@ namespace Classes_Basics
         // Setter
         public void SetLength(int length)
         {
+            if (length < 0)
+            {
+                throw new Exception("Length should be higher than 0");
+            }
             this.length = length;
         }
 
@@ -24,6 +28,11 @@ namespace Classes_Basics
         public int GetLength()
         {
             return this.length;
+        }
+
+        public int GetVolume()
+        {
+            return this.length * this.height * this.width;
         }
 
 

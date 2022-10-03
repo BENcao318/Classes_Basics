@@ -16,8 +16,9 @@ Natalie.IntroduceMyself();
 Box box = new Box();
 //box.length = 3;
 box.SetLength(3);
-Console.WriteLine("The length of the box is {0}", box.GetLength());
+
 box.height = 4;
 box.width = 5;
+Console.WriteLine("Box's volume is {0}", box.GetVolume());
 
 box.DisplayInfo();
