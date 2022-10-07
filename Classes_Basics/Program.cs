@@ -191,7 +191,7 @@ myArrayList.Add(25.3);
 myArrayList.Add(13);
 
 // only remove the first item that is the value
-myArrayList.Remove(13);
+myArrayList.Remove(13); 
 
 myArrayList.RemoveAt(0);
 
