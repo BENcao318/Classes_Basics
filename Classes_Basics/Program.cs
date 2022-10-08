@@ -177,41 +177,60 @@ using System.Collections;
 //    }
 //}
 
-// declaring an ArrayList
-ArrayList myArrayList = new ArrayList();
+//// declaring an ArrayList
+//ArrayList myArrayList = new ArrayList();
 
-ArrayList myArrayList2 = new ArrayList(100);
+//ArrayList myArrayList2 = new ArrayList(100);
 
-myArrayList.Add(25);
-myArrayList.Add("Hello");
-myArrayList.Add(13.37);
-myArrayList.Add(13);
-myArrayList.Add(128);
-myArrayList.Add(25.3);
-myArrayList.Add(13);
+//myArrayList.Add(25);
+//myArrayList.Add("Hello");
+//myArrayList.Add(13.37);
+//myArrayList.Add(13);
+//myArrayList.Add(128);
+//myArrayList.Add(25.3);
+//myArrayList.Add(13);
 
-// only remove the first item that is the value
-myArrayList.Remove(13); 
+//// only remove the first item that is the value
+//myArrayList.Remove(13); 
 
-myArrayList.RemoveAt(0);
+//myArrayList.RemoveAt(0); 
 
-Console.WriteLine(myArrayList.Count);
+//Console.WriteLine(myArrayList.Count);
 
-double sum = 0;
+//double sum = 0;
 
-foreach (object obj in myArrayList)
+//foreach (object obj in myArrayList)
+//{
+//    if(obj is int)
+//    {
+//        sum += Convert.ToDouble(obj);
+//    } else if(obj is double)
+//    {
+//        sum += (double)obj;
+//    }
+//    else if(obj is string)
+//    {
+//        Console.WriteLine(obj);
+//    }
+//}
+
+//Console.WriteLine(sum);
+
+List<string> friends = new List<string>();
+
+var coworkers = new List<string> { "Frank", "Joe"};
+
+foreach(var co in coworkers)
 {
-    if(obj is int)
-    {
-        sum += Convert.ToDouble(obj);
-    } else if(obj is double)
-    {
-        sum += (double)obj;
-    }
-    else if(obj is string)
-    {
-        Console.WriteLine(obj);
-    }
+    Console.WriteLine(co);
 }
 
-Console.WriteLine(sum);
+List<object> list = new List<object>();
+list.Add(1);
+list.Add("2");
+
+foreach(var item in list)
+{
+    Console.WriteLine(item);
+}
+
