@@ -218,7 +218,7 @@ using System.Collections;
 
 List<string> friends = new List<string>();
 
-var coworkers = new List<string> { "Frank", "Joe"};
+var coworkers = new List<string> { "Frank", "Joe"}; 
 
 foreach(var co in coworkers)
 {
